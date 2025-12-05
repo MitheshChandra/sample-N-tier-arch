@@ -215,4 +215,3 @@ sudo systemctl restart grafana-server
 
 ---
 
-This guide provides a basic setup for Grafana on Ubuntu 24.04. For production environments, consider implementing additional security measures and performance optimizations based on your specific requirements.
