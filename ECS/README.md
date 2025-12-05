@@ -32,8 +32,8 @@ The sample consists of CloudFormation templates and a simple web application. Be
    |--6-codepipeline.yaml
    |--22-load-balancer-blue-green.yaml
    |--23-s3-ecr.yaml
-   |--25-service-book-blue-green.yaml
-   |--26-codepipeline-blue-green.yaml
+   |--24-service-book-blue-green.yaml
+   |--25-codepipeline-blue-green.yaml
 |--README.md
 ```
 
@@ -116,20 +116,20 @@ aws cloudformation create-stack \
  --capabilities CAPABILITY_NAMED_IAM
 ```
 
-Second, let's create another book service by launching 25-service-book-blue-green.yaml.
+Second, let's create another book service by launching 24-service-book-blue-green.yaml.
 
 ```bash
 aws cloudformation create-stack \
  --stack-name cfn-service-book-blue-green \
- --template-body file://25-service-book-blue-green.yaml \
+ --template-body file://24-service-book-blue-green.yaml \
  --capabilities CAPABILITY_NAMED_IAM
 ```
 
-Third, let's create a CodePipeline with Blue/Green ECS Deployment supported by CodeDeploy by launching 26-codepipeline-blue-green.yaml
+Third, let's create a CodePipeline with Blue/Green ECS Deployment supported by CodeDeploy by launching 25-codepipeline-blue-green.yaml
 
 ```bash
 aws cloudformation create-stack \
  --stack-name cfn-pipeline-blue-green \
- --template-body file://26-codepipeline-blue-green.yaml \
+ --template-body file://25-codepipeline-blue-green.yaml \
  --capabilities CAPABILITY_NAMED_IAM
 ```
