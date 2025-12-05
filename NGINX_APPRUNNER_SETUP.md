@@ -253,5 +253,3 @@ Or through the AWS Console:
 4. Confirm deletion
 
 ---
-
-This guide provides a basic setup for deploying Nginx on AWS App Runner. For production environments, consider implementing additional security measures and performance optimizations based on your specific requirements.
